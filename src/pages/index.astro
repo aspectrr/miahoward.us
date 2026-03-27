@@ -1,0 +1,828 @@
+---
+const siteTitle = "Mia Howard | Talent Acquisition & HR Experience Specialist";
+const siteDescription =
+	"Recruiter-focused profile for Mia Howard, a Talent Acquisition and HR Experience Specialist at Envita Solutions and Kelley School of Business graduate.";
+
+const profile = {
+	name: "Mia Howard",
+	role: "Talent Acquisition & HR Experience Specialist",
+	company: "Envita Solutions",
+	location: "Indianapolis, Indiana",
+	email: "miaannhoward@gmail.com",
+	linkedin: "https://www.linkedin.com/in/miahoward25",
+	resumeUrl: "/documents/mia-howard-resume.pdf",
+	imageUrl: "/images/mia-howard-profile.jpg",
+	heroTagline:
+		"Building thoughtful hiring experiences with strong organization, candidate care, and people-first recruiting support.",
+	summary: [
+		"Mia Howard is an early-career talent acquisition and HR professional with experience supporting candidate pipelines, onboarding, and employee experience initiatives. Her work centers on making hiring feel efficient, human, and well organized for both candidates and internal teams.",
+		"At Envita Solutions, she has contributed across recruiting operations, hiring manager partnership, career fair representation, and HR process improvement. She combines strong communication with careful follow-through, bringing structure to fast-moving people processes while helping teams create a positive first impression for new hires.",
+	],
+	experience: [
+		{
+			company: "Envita Solutions",
+			location: "Indianapolis, Indiana",
+			roles: [
+				{
+					title: "TA & HR Experience Specialist",
+					period: "June 2025 - Present",
+					highlights: [
+						"Partners with hiring managers to support a smooth recruiting and onboarding experience.",
+						"Sources candidates across multiple pipelines to help teams identify strong-fit talent.",
+						"Represents Envita at career fairs and engages early-career candidates with the company brand.",
+						"Developed Envita's early-in-career talent program to better support emerging professionals and future hiring needs.",
+						"Helps streamline HR processes across departments to improve consistency and efficiency.",
+					],
+				},
+				{
+					title: "Human Resources Intern",
+					period: "May 2024 - May 2025",
+					highlights: [
+						"Supported the transition to a new HR platform and helped improve process flow during implementation.",
+						"Audited job descriptions from Applicant Pool into JDXpert to improve application accuracy and candidate experience.",
+						"Screened applicants and supported recruiting workflows to help match candidates with open roles.",
+						"Planned employee engagement events and contributed to a stronger in-office experience.",
+						"Assisted with onboarding and day-one employee support.",
+					],
+				},
+			],
+		},
+		{
+			company: "Indiana University Accessible Educational Services",
+			location: "Bloomington, Indiana",
+			roles: [
+				{
+					title: "Access Assistant",
+					period: "September 2022 - May 2024",
+					highlights: [
+						"Coordinated student exam accommodations in a structured, confidential environment.",
+						"Managed between 1 and 50 student exams at a time while maintaining accuracy and professionalism.",
+						"Worked directly with students to ensure they received the support and resources they needed.",
+						"Strengthened skills in communication, discretion, and people-centered operations.",
+					],
+				},
+			],
+		},
+	],
+	education: {
+		school: "Indiana University - Kelley School of Business",
+		degree: "Bachelor's degree in Business Management and International Business",
+		period: "August 2022 - May 2025",
+		details: [
+			"Direct-admit student in the Kelley School of Business.",
+			"Academic foundation in management, communication, and global business strategy.",
+		],
+	},
+	skills: [
+		"Talent acquisition support",
+		"Candidate screening",
+		"Onboarding coordination",
+		"Hiring manager collaboration",
+		"Career fair representation",
+		"Workday and JDXpert process exposure",
+		"Recruiting operations and organization",
+		"Relationship building",
+	],
+};
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={siteDescription} />
+		<meta property="og:title" content={siteTitle} />
+		<meta property="og:description" content={siteDescription} />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content={profile.imageUrl} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>{siteTitle}</title>
+	</head>
+	<body>
+		<div class="page-shell">
+			<header class="site-header">
+				<a class="wordmark" href="#top">{profile.name}</a>
+				<nav aria-label="Primary">
+					<a href="#summary">Summary</a>
+					<a href="#experience">Experience</a>
+					<a href="#education">Education</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</header>
+
+			<main id="top">
+				<section class="hero" data-reveal>
+					<div class="hero-copy">
+						<p class="eyebrow">Recruiter profile</p>
+						<h1>{profile.role}</h1>
+						<p class="hero-intro">
+							{profile.name} supports recruiting, onboarding, and candidate experience
+							work at <strong>{profile.company}</strong> in {profile.location}.
+						</p>
+						<p class="hero-tagline">{profile.heroTagline}</p>
+						<div class="hero-meta" aria-label="Professional details">
+							<span>{profile.company}</span>
+							<span>{profile.location}</span>
+							<span>Kelley School of Business graduate</span>
+						</div>
+						<div class="cta-row">
+							<a class="button button-primary" href={`mailto:${profile.email}`}>Email Mia</a>
+							<a
+								class="button button-secondary"
+								href={profile.linkedin}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								LinkedIn
+							</a>
+							<a class="button button-secondary" href={profile.resumeUrl} download>
+								Resume
+							</a>
+						</div>
+					</div>
+
+					<div class="hero-portrait">
+						<div class="portrait-frame">
+							<img
+								src={profile.imageUrl}
+								alt="Portrait of Mia Howard"
+								loading="eager"
+								width="1173"
+								height="1600"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section id="summary" class="content-section" data-reveal>
+					<div class="section-heading">
+						<p class="eyebrow">Professional summary</p>
+						<h2>Recruiting support grounded in organization and candidate care.</h2>
+					</div>
+					<div class="summary-grid">
+						{profile.summary.map((paragraph) => <p>{paragraph}</p>)}
+					</div>
+				</section>
+
+				<section id="experience" class="content-section" data-reveal>
+					<div class="section-heading">
+						<p class="eyebrow">Experience</p>
+						<h2>Recent work centered on recruiting, onboarding, and people operations.</h2>
+					</div>
+
+					<div class="timeline">
+						{profile.experience.map((entry) => (
+							<article class="experience-card">
+								<div class="experience-company">
+									<h3>{entry.company}</h3>
+									<p>{entry.location}</p>
+								</div>
+
+								<div class="role-stack">
+									{entry.roles.map((role) => (
+										<section class="role-card">
+											<div class="role-heading">
+												<div>
+													<h4>{role.title}</h4>
+													<p>{role.period}</p>
+												</div>
+											</div>
+											<ul>
+												{role.highlights.map((highlight) => <li>{highlight}</li>)}
+											</ul>
+										</section>
+									))}
+								</div>
+							</article>
+						))}
+					</div>
+				</section>
+
+				<section
+					id="education"
+					class="content-section education-section"
+					data-reveal
+				>
+					<div class="section-heading">
+						<p class="eyebrow">Education</p>
+						<h2>Business training with a management and international focus.</h2>
+					</div>
+
+						<article class="education-card">
+						<p class="education-label">Indiana University Bloomington</p>
+						<h3>{profile.education.school}</h3>
+						<p class="education-degree">{profile.education.degree}</p>
+						<p class="education-period">{profile.education.period}</p>
+						<ul>
+							{profile.education.details.map((detail) => <li>{detail}</li>)}
+						</ul>
+					</article>
+				</section>
+
+				<section class="content-section skills-section" data-reveal>
+					<div class="section-heading">
+						<p class="eyebrow">Recruiter strengths</p>
+						<h2>Experience that translates directly to early-career TA and HR roles.</h2>
+					</div>
+
+					<div class="skills-grid">
+						{profile.skills.map((skill) => <span class="skill-pill">{skill}</span>)}
+					</div>
+				</section>
+
+				<section id="contact" class="contact-section">
+					<div class="contact-panel" data-reveal>
+						<p class="eyebrow">Contact</p>
+						<h2>Open to conversations about recruiting, talent, and HR opportunities.</h2>
+						<p>
+							For recruiter outreach, resume requests, or professional introductions, the
+							fastest way to connect is by email or LinkedIn.
+						</p>
+						<div class="cta-row">
+							<a class="button button-primary" href={`mailto:${profile.email}`}>miaannhoward@gmail.com</a>
+							<a
+								class="button button-secondary"
+								href={profile.linkedin}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								View LinkedIn
+							</a>
+							<a class="button button-secondary" href={profile.resumeUrl} download>
+								Download Resume
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script is:inline>
+			const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+			const revealElements = Array.from(document.querySelectorAll("[data-reveal]"));
+
+			if (!prefersReducedMotion && revealElements.length > 0) {
+				const isInitiallyVisible = (element) => {
+					const rect = element.getBoundingClientRect();
+					return rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
+				};
+
+				const initialRevealElements = revealElements.filter(isInitiallyVisible);
+
+				initialRevealElements.forEach((element) => {
+					element.classList.add("reveal-on-load");
+				});
+
+				document.documentElement.classList.add("reveal-enhanced");
+
+				const observer = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							if (!entry.isIntersecting) {
+								return;
+							}
+
+							entry.target.classList.add("is-revealed");
+							observer.unobserve(entry.target);
+						});
+					},
+					{
+						threshold: 0.18,
+						rootMargin: "0px 0px -12% 0px",
+					},
+				);
+
+				revealElements.forEach((element) => {
+					if (element.classList.contains("reveal-on-load")) {
+						return;
+					}
+
+					observer.observe(element);
+				});
+
+				window.requestAnimationFrame(() => {
+					initialRevealElements.forEach((element, index) => {
+						window.setTimeout(() => {
+							element.classList.add("is-revealed");
+						}, index * 120);
+					});
+				});
+			}
+		</script>
+	</body>
+</html>
+
+<style>
+	:root {
+		--bg: #f7f1eb;
+		--bg-strong: #efe4d8;
+		--surface: rgba(255, 252, 248, 0.86);
+		--surface-strong: #fffaf5;
+		--card: rgba(255, 248, 241, 0.96);
+		--line: rgba(93, 66, 49, 0.14);
+		--line-strong: rgba(93, 66, 49, 0.22);
+		--text: #2f241c;
+		--muted: #6c5648;
+		--accent: #b45b3c;
+		--accent-dark: #8f452c;
+		--accent-soft: #f1ded0;
+		--shadow: 0 24px 60px rgba(65, 35, 19, 0.12);
+		--radius-xl: 32px;
+		--radius-lg: 24px;
+		--radius-md: 18px;
+		--radius-sm: 999px;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+		min-width: 320px;
+		font-family: "Manrope", sans-serif;
+		color: var(--text);
+		background:
+			radial-gradient(circle at top left, rgba(226, 187, 160, 0.55), transparent 28%),
+			radial-gradient(circle at top right, rgba(214, 173, 128, 0.42), transparent 24%),
+			linear-gradient(180deg, #fbf7f3 0%, var(--bg) 46%, #f4ece4 100%);
+	}
+
+	a {
+		color: inherit;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
+	.page-shell {
+		width: min(1180px, calc(100vw - 32px));
+		margin: 0 auto;
+		padding: 24px 0 56px;
+	}
+
+	.site-header {
+		position: sticky;
+		top: 16px;
+		z-index: 10;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 18px 22px;
+		margin-bottom: 24px;
+		background: rgba(255, 248, 241, 0.75);
+		border: 1px solid rgba(255, 255, 255, 0.6);
+		border-radius: var(--radius-sm);
+		backdrop-filter: blur(18px);
+		box-shadow: 0 12px 30px rgba(78, 48, 31, 0.08);
+	}
+
+	.wordmark {
+		font-family: "Fraunces", serif;
+		font-size: 1.1rem;
+		font-weight: 600;
+		letter-spacing: 0.01em;
+		text-decoration: none;
+	}
+
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	nav a {
+		font-size: 0.95rem;
+		font-weight: 600;
+		text-decoration: none;
+		color: var(--muted);
+	}
+
+	.hero,
+	.content-section,
+	.contact-panel {
+		background: var(--surface);
+		border: 1px solid rgba(255, 255, 255, 0.72);
+		box-shadow: var(--shadow);
+		backdrop-filter: blur(18px);
+	}
+
+	[data-reveal] {
+		opacity: 1;
+		transform: none;
+	}
+
+	:global(.reveal-enhanced) [data-reveal] {
+		transition:
+			opacity 900ms ease,
+			transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+		will-change: opacity, transform;
+	}
+
+	:global(.reveal-enhanced) [data-reveal]:not(.is-revealed) {
+		opacity: 0;
+		transform: translateY(34px);
+	}
+
+	:global(.reveal-enhanced) [data-reveal].is-revealed {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.hero {
+		display: grid;
+		grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.9fr);
+		gap: 40px;
+		align-items: center;
+		padding: 34px;
+		border-radius: var(--radius-xl);
+		overflow: hidden;
+	}
+
+	.hero-copy {
+		position: relative;
+		z-index: 1;
+	}
+
+	.eyebrow {
+		margin: 0 0 14px;
+		font-size: 0.78rem;
+		font-weight: 800;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: var(--accent-dark);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin: 0;
+		font-family: "Fraunces", serif;
+		line-height: 1.04;
+	}
+
+	h1 {
+		max-width: 12ch;
+		font-size: clamp(3rem, 7vw, 5.6rem);
+	}
+
+	h2 {
+		max-width: 18ch;
+		font-size: clamp(2rem, 4vw, 3rem);
+	}
+
+	h3 {
+		font-size: clamp(1.4rem, 2vw, 1.8rem);
+	}
+
+	h4 {
+		font-size: 1.3rem;
+	}
+
+	p,
+	li {
+		font-size: 1rem;
+		line-height: 1.72;
+		color: var(--muted);
+	}
+
+	.hero-intro,
+	.hero-tagline {
+		max-width: 62ch;
+		margin: 22px 0 0;
+		font-size: 1.08rem;
+	}
+
+	.hero-tagline {
+		max-width: 52ch;
+	}
+
+	.hero-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-top: 24px;
+	}
+
+	.hero-meta span,
+	.skill-pill {
+		display: inline-flex;
+		align-items: center;
+		padding: 10px 14px;
+		border-radius: var(--radius-sm);
+		background: var(--accent-soft);
+		color: var(--text);
+		font-size: 0.95rem;
+		font-weight: 600;
+	}
+
+	.cta-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		margin-top: 28px;
+	}
+
+	.button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 50px;
+		padding: 0 18px;
+		border-radius: var(--radius-sm);
+		border: 1px solid transparent;
+		font-weight: 700;
+		text-decoration: none;
+		transition:
+			transform 180ms ease,
+			background-color 180ms ease,
+			border-color 180ms ease;
+	}
+
+	.button:hover,
+	.button:focus-visible {
+		transform: translateY(-1px);
+	}
+
+	.button:focus-visible,
+	nav a:focus-visible,
+	.wordmark:focus-visible {
+		outline: 3px solid rgba(180, 91, 60, 0.28);
+		outline-offset: 4px;
+	}
+
+	.button-primary {
+		background: var(--accent);
+		color: #fff9f5;
+	}
+
+	.button-primary:hover,
+	.button-primary:focus-visible {
+		background: var(--accent-dark);
+	}
+
+	.button-secondary {
+		background: rgba(255, 255, 255, 0.72);
+		border-color: var(--line);
+	}
+
+	.button-secondary:hover,
+	.button-secondary:focus-visible {
+		background: var(--surface-strong);
+		border-color: var(--line-strong);
+	}
+
+	.hero-portrait {
+		display: flex;
+		justify-content: center;
+	}
+
+	.portrait-frame {
+		position: relative;
+		width: min(100%, 390px);
+		aspect-ratio: 4 / 5;
+		padding: 16px;
+		border-radius: calc(var(--radius-xl) + 6px);
+		background:
+			linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(245, 227, 213, 0.9)),
+			var(--surface-strong);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 24px 50px rgba(69, 40, 23, 0.16);
+	}
+
+	.portrait-frame::before {
+		content: "";
+		position: absolute;
+		inset: 12px;
+		border: 1px solid rgba(130, 84, 57, 0.16);
+		border-radius: 28px;
+		pointer-events: none;
+	}
+
+	.portrait-frame img {
+		width: 100%;
+		height: 100%;
+		border-radius: 24px;
+		object-fit: cover;
+		object-position: center 24%;
+	}
+
+	.content-section,
+	.contact-panel {
+		margin-top: 22px;
+		padding: 34px;
+		border-radius: var(--radius-xl);
+	}
+
+	.section-heading {
+		display: grid;
+		gap: 10px;
+		margin-bottom: 24px;
+	}
+
+	.summary-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 20px;
+	}
+
+	.summary-grid p,
+	.contact-panel p {
+		margin: 0;
+	}
+
+	.timeline,
+	.role-stack {
+		display: grid;
+		gap: 18px;
+	}
+
+	.experience-card {
+		display: grid;
+		grid-template-columns: minmax(220px, 0.4fr) minmax(0, 1fr);
+		gap: 18px;
+		padding: 24px;
+		border-radius: var(--radius-lg);
+		background: var(--card);
+		border: 1px solid var(--line);
+	}
+
+	.experience-company p,
+	.role-heading p,
+	.education-period,
+	.education-label {
+		margin: 8px 0 0;
+		font-weight: 600;
+	}
+
+	.role-card,
+	.education-card {
+		padding: 22px;
+		border-radius: var(--radius-md);
+		background: rgba(255, 255, 255, 0.56);
+		border: 1px solid var(--line);
+	}
+
+	.role-card ul,
+	.education-card ul {
+		margin: 14px 0 0;
+		padding-left: 20px;
+	}
+
+	.education-section {
+		background:
+			linear-gradient(135deg, rgba(255, 244, 234, 0.95), rgba(249, 240, 233, 0.86)),
+			var(--surface);
+	}
+
+	.education-card {
+		background: rgba(255, 252, 247, 0.8);
+	}
+
+	.education-degree {
+		margin: 14px 0 0;
+		font-size: 1.05rem;
+	}
+
+	.skills-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	.contact-section {
+		margin-top: 22px;
+	}
+
+	.contact-panel {
+		background:
+			linear-gradient(145deg, rgba(80, 45, 26, 0.98), rgba(126, 68, 43, 0.94));
+		color: #fff7f2;
+	}
+
+	.contact-panel h2,
+	.contact-panel p,
+	.contact-panel .eyebrow {
+		color: inherit;
+	}
+
+	.contact-panel .eyebrow {
+		opacity: 0.82;
+	}
+
+	.contact-panel .button-primary {
+		background: #fff4ea;
+		color: var(--accent-dark);
+	}
+
+	.contact-panel .button-primary:hover,
+	.contact-panel .button-primary:focus-visible {
+		background: #ffffff;
+	}
+
+	.contact-panel .button-secondary {
+		background: rgba(255, 255, 255, 0.12);
+		border-color: rgba(255, 255, 255, 0.22);
+		color: #fff7f2;
+	}
+
+	.contact-panel .button-secondary:hover,
+	.contact-panel .button-secondary:focus-visible {
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	@media (max-width: 900px) {
+		.page-shell {
+			width: min(100vw - 20px, 1180px);
+			padding-top: 12px;
+		}
+
+		.site-header,
+		.hero,
+		.content-section,
+		.contact-panel {
+			padding: 24px;
+		}
+
+		.hero,
+		.summary-grid,
+		.experience-card {
+			grid-template-columns: 1fr;
+		}
+
+		h1 {
+			max-width: 14ch;
+		}
+
+		.hero-portrait {
+			order: -1;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.site-header {
+			position: static;
+			flex-direction: column;
+			align-items: flex-start;
+			border-radius: 24px;
+		}
+
+		nav {
+			gap: 12px 14px;
+		}
+
+		nav a {
+			font-size: 0.9rem;
+		}
+
+		.page-shell {
+			width: min(100vw - 16px, 1180px);
+			padding-bottom: 32px;
+		}
+
+		.hero,
+		.content-section,
+		.contact-panel {
+			padding: 20px;
+			border-radius: 24px;
+		}
+
+		.portrait-frame {
+			max-width: 320px;
+			padding: 12px;
+		}
+
+		.hero-meta span,
+		.skill-pill {
+			width: 100%;
+			justify-content: center;
+		}
+
+		.button {
+			width: 100%;
+		}
+
+		.role-card,
+		.education-card,
+		.experience-card {
+			padding: 18px;
+		}
+	}
+</style>
